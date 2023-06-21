@@ -1,0 +1,318 @@
+float CWU_Start_Temp, CWU_Stop_Temp, celsius;
+const float BETA = 3950;
+bool CWU, Z3D, CO;
+int time;
+
+void setup() 
+{
+  CWU_Start_Temp = 40.0;
+  CWU_Stop_Temp = 46.0;
+  Serial.begin(9600);
+  pinMode(13, OUTPUT);
+  pinMode(12, OUTPUT);
+  pinMode(11, OUTPUT);
+
+  // gdy ktos wlaczy urzadzenie grzejemy dom
+  Serial.println("Zaczynam prace");
+  CO = true;
+  CWU = false;
+  Z3D = false;
+  time = 0;
+  digitalWrite(13, HIGH);
+  digitalWrite(12, LOW);
+  digitalWrite(11, LOW);
+  delay(500);
+}
+
+void loop() 
+{
+  
+  int analogValue = analogRead(A0);
+  celsius = 1 / (log(1 / (1023. / analogValue - 1)) / BETA + 1.0 / 298.15) - 273.15;
+
+  // jesli temperatura ponizej 40 stopni
+  if(celsius < CWU_Start_Temp) 
+  {
+    CWU = true;
+    CO = false;
+    Z3D = true;
+  }
+
+  // jesli temperatura wieksza od 46 stopni
+  if(celsius > CWU_Stop_Temp && Z3D)
+  {
+    Z3D = false;
+    time = 2000;
+  }
+
+  if(time > 0)
+  {
+    if(time == 1)
+    {
+      CO = true;
+      CWU = false;
+    }
+    time--;
+  }
+
+  if (Serial.available() > 0) 
+  {
+    String command;
+    command = Serial.readString();
+    Serial.println("command: " + command);
+    checkCommand(command);
+  }
+
+  CO_State();
+  CWU_State();
+  Z3D_State();
+  delay(1);
+}
+
+void CO_State()
+{
+  if(CO)
+  {
+    digitalWrite(13, HIGH);
+  }
+  else
+  {
+    digitalWrite(13, LOW);
+  }
+}
+
+void CWU_State()
+{
+  if(CWU)
+  {
+    digitalWrite(12, HIGH);
+  }
+  else
+  {
+    digitalWrite(12, LOW);
+  }
+}
+
+void Z3D_State()
+{
+  if(Z3D)
+  {
+    digitalWrite(11, HIGH);
+  }
+  else
+  {
+    digitalWrite(11, LOW);
+  }
+}
+
+void checkCommand(String command)
+{
+  String args[5];
+  int argsCount = 0;
+  while (command.length() > 0)
+  {
+    int index = command.indexOf(' ');
+    if (index == -1) // No space found
+    {
+      args[argsCount++] = command;
+      break;
+    }
+    else
+    {
+      args[argsCount++] = command.substring(0, index);
+      command = command.substring(index+1);
+    }
+    if(argsCount > 4)
+    {
+      break;
+    }
+  }
+  for(int i=0; i<argsCount; i++)
+  {
+    int index = args[i].indexOf('\n');
+    if(index != -1)
+    {
+      args[i] = args[i].substring(0, index);
+    }
+  }
+  if((args[0] == "hotwater" || args[0] == "heating") && argsCount <=4)
+  {
+    if(args[0] == "hotwater")
+    {
+      executeCommandHotwater(args, argsCount);
+    }
+    else
+    {
+      executeCommandHeating(args, argsCount);
+    }
+  }
+  else
+  {
+    Serial.println("return: nieznana komenda");
+  }
+}
+
+void executeCommandHotwater(String args[], int argsCount)
+{
+  if(args[1] == "start")
+  {
+    if(argsCount == 2)
+    {
+      if(celsius < CWU_Stop_Temp)
+      {
+        Serial.println("return: hotwater started");
+        CWU = true;
+        Z3D = true;
+        CO = false;
+      }
+      else
+      {
+        Serial.println("return: temperature is too high");
+      }
+    }
+    else
+    {
+      if(args[2] == "temp")
+      {
+        if(argsCount == 3)
+        {
+          Serial.println("return: hotwater start temp is: " + String(CWU_Start_Temp));
+        }
+        else
+        {
+          if(args[3].toFloat() != 0)
+          {
+            if(argsCount == 4)
+            {
+              if(args[3].toFloat() < CWU_Stop_Temp)
+              {
+                Serial.println("return: seting hotwater start temp to " + args[3]);
+                CWU_Start_Temp = args[3].toFloat();
+              }
+              else
+              {
+                Serial.println("return: temp must be lower than CWU Stop temp");
+              }
+            }
+            else
+            {
+              Serial.println("return: nieznana komenda");
+            }
+          }
+          else
+          {
+            Serial.println("return: nieznana komenda");
+          }
+        }
+      }
+      else
+      {
+        Serial.println("return: nieznana komenda");
+      }
+    }
+  }
+  if(args[1] == "stop")
+  {
+    if(argsCount == 2)
+    {
+      Serial.println("return: hotwater stopped");
+      CWU = false;
+      Z3D = false;
+    }
+    else
+    {
+      if(args[2] == "temp")
+      {
+        if(argsCount == 3)
+        {
+          Serial.println("return: hotwater stop temp is: " + String(CWU_Stop_Temp));
+        }
+        else
+        {
+          if(args[3].toFloat() != 0)
+          {
+            if(argsCount == 4)
+            {
+              if(args[3].toFloat() > CWU_Start_Temp)
+              {
+                Serial.println("return: seting hotwater stop temp to " + args[3]);
+                CWU_Stop_Temp = args[3].toFloat();
+              }
+              else
+              {
+                Serial.println("return: temp must be higher than CWU Start temp");
+              }
+            }
+            else
+            {
+              Serial.println("return: nieznana komenda");
+            }
+          }
+          else
+          {
+            Serial.println("return: nieznana komenda");
+          }
+        }
+      }
+      else
+      {
+        Serial.println("return: nieznana komenda");
+      }
+    }
+  }
+  if(args[1] == "temp")
+  {
+    if(argsCount == 2)
+    {
+      Serial.println("return: actuall temp is: " + String(celsius) + " C");
+    }
+    else
+    {
+      Serial.println("return: nieznana komenda");
+    }
+  }
+  if(args[1] != "start" && args[1] != "stop" && args[1] != "temp")
+  {
+    Serial.println("return: nieznana komenda");
+  }
+}
+
+void executeCommandHeating(String args[], int argsCount)
+{
+  if(args[1] == "start")
+  {
+    if(argsCount == 2)
+    {
+      Serial.println("return: heating started");
+      CO = true;
+      CWU = false;
+      Z3D = false;
+    }
+    else
+    {
+      Serial.println("return: nieznana komenda");
+    }
+  }
+  if(args[1] == "stop")
+  {
+    if(argsCount == 2)
+    {
+      Serial.println("return: heating stopped");
+      CO = false;
+    }
+    else
+    {
+      Serial.println("return: nieznana komenda");
+    }
+  }
+  if(args[1] != "start" && args[1] != "stop")
+  {
+    Serial.println("return: nieznana komenda");
+  }
+}
+
+
+
+//green - CO
+//red - CWU
+//blue - zawór 3D - woda CWU
