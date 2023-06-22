@@ -45,7 +45,7 @@ https://github.com/adbreeker/Studies-UAM-Public/assets/111668308/c0ccbe55-019e-4
 	- Wideo prezentacja:
 
 
-https://user-images.githubusercontent.com/111668308/213841046-7052a0d6-76b6-44b0-a183-8e661e923ea7.mp4
+https://github.com/adbreeker/Studies-UAM-Public/assets/111668308/2704a519-218e-4927-a959-fc5182ff386a
 
 ## [Metody numeryczne](https://github.com/adbreeker/Studies-UAM-Public/tree/main/Metody%20numeryczne)
 
