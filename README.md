@@ -12,6 +12,10 @@
 2. ContactsSender-Receiver:
 	Dwie aplikacje (kotlin) na telefony z systemem android, jedna wysyła kontakty z telefonu bez użycia internetu, druga te kontakty odbiera.
 
+## [Grafika komputerowa](https://github.com/adbreeker/GRK_PROJECT)
+
+Projekt z przedmiotu Grafika komputerowa, realizowany w innym repozytorium
+
 ## [Inżynieria oprogramowania](https://github.com/adbreeker/Studies-UAM-Public/tree/main/Inżynieria%20oprogramowania)
 
 Dokumentacja oprogramowania oraz rozkład zadań w jirze (wyimaginowany projekt) na potrzeby zajęć z inżynierii oprogramowania
@@ -68,6 +72,10 @@ Prosty CRM w .net c#
 2. Prolog:
 	- Kilka prostych skrtyptów w języku Prolog
 
+## [Projekt inżynierski](https://github.com/adbreeker/EngineeringProject)
+
+Projekt inżynierski wieńczący zakończenie studiów inżynierskich, realizowany w innym repozytorium
+
 ## [Sieci komputerowe](https://github.com/adbreeker/Studies-UAM-Public/tree/main/Sieci%20komputerowe)
 
 Prosta aplikacja typu klient - serwer działająca na socketach w sieci lokalnej, klient (c#) wysyła zapytania o bazę słów języka polskiego do serwera (c++) i przyjmuje odpowiedzi takie jak:
@@ -82,3 +90,7 @@ Aplikacja konsolowa w języku c, implementująca powłokę shell (microshell - n
 ## [Szeregowanie zadań](https://github.com/adbreeker/Studies-UAM-Public/tree/main/Szeregowanie%20zadań)
 
 Rozwiązania problemów z dziedziny szeregowania zadań, najciekawszym z nich jest algorytm genetyczny implementowany w zestawie 13
+
+## [Sztuczna inteligencja](https://github.com/adbreeker/AI_Rat_Saper)
+
+Projekt z przedmiotu Sztuczna inteligencja, realizowany w innym repozytorium
