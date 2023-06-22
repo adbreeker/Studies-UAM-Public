@@ -33,16 +33,16 @@ https://user-images.githubusercontent.com/111668308/213841046-7052a0d6-76b6-44b0
 ## [Metody numeryczne](https://github.com/adbreeker/Studies-UAM-Public/tree/main/Metody%20numeryczne)
 
 1. Skrypty na test 2:
-- algorytm hornera
-- funkcje sklejane
+	- algorytm hornera
+	- funkcje sklejane
 2. Skrypty na test 3:
-- kwadratury:
-	- metoda parabol (simpsona)
-	- metoda trapezów
-- równania nieliniowe:
-	- metoda połowienia (biseksji)
- 	- metoda stycznych (newtona)
-  - metoda siecznych
+	- kwadratury:
+		- metoda parabol (simpsona)
+		- metoda trapezów
+	- równania nieliniowe:
+		- metoda połowienia (biseksji)
+ 		- metoda stycznych (newtona)
+		- metoda siecznych
 
 ## [Pracownia programowania](https://github.com/adbreeker/Studies-UAM-Public/tree/main/Pracownia%20programowania)
 
