@@ -1,3 +1,3 @@
 # Studies-UAM-Public
 
-## [Algorytmy](Studies-UAM-Public/tree/main/Algorytmy i struktur danych)
+## [Algorytmy i struktury danych](https://github.com/adbreeker/Studies-UAM-Public/tree/main/Algorytmy%20i%20struktury%20danych/)
