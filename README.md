@@ -15,9 +15,9 @@
 ## [Języki formalne](https://github.com/adbreeker/Studies-UAM-Public/tree/main/Języki%20formalne)
 
 1. Arduino:
-	Kod do kontrolera arduino, rozwiązujący problem przełączania systemu ogrzewania domu przy pomocy pompy ciepła
+	-Kod do kontrolera arduino, rozwiązujący problem przełączania systemu ogrzewania domu przy pomocy pompy ciepła
 2. Gear-Rotation-Detector:
-	Aplikacja mobilna w unity, implementująca czujnik kierunku obrotów zębatki, w oparciu o czujnik odległości
+	-Aplikacja mobilna w unity, implementująca czujnik kierunku obrotów zębatki, w oparciu o czujnik odległości
 
 Wideo prezentacja:
 
