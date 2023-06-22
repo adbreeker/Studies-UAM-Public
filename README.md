@@ -30,6 +30,8 @@ https://user-images.githubusercontent.com/111668308/215346010-05b65eca-96c9-46df
 	Aplikacja mobilna w unity, implementująca skrzyżowanie priorytetowe ze światłami, auta nie są poinformowane, reagują na bierząco na rzeczy które widzą przed sobą
 
 Wideo prezentacja:
+
+
 https://user-images.githubusercontent.com/111668308/213841046-7052a0d6-76b6-44b0-a183-8e661e923ea7.mp4
 
 ## [Metody numeryczne](https://github.com/adbreeker/Studies-UAM-Public/tree/main/Metody%20numeryczne)
