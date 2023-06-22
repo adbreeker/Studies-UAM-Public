@@ -3,7 +3,7 @@
 ## [Algorytmy i struktury danych](https://github.com/adbreeker/Studies-UAM-Public/tree/main/Algorytmy%20i%20struktury%20danych/)
 
 1. Algorytmy sortujące:
-- sortowanie przez łączenie naturalne
+	- sortowanie przez łączenie naturalne
 
 ## [Bezpieczeństwo systemów mobilnych](https://github.com/adbreeker/Studies-UAM-Public/tree/main/Bezpieczeństwo%20systemów%20mobilnych)
 
