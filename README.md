@@ -18,18 +18,16 @@
 	- Kod do kontrolera arduino, rozwiązujący problem przełączania systemu ogrzewania domu przy pomocy pompy ciepła
 2. Gear-Rotation-Detector:
 	- Aplikacja mobilna w unity, implementująca czujnik kierunku obrotów zębatki, w oparciu o czujnik odległości
-
-Wideo prezentacja:
+	- Wideo prezentacja:
 
 
 https://user-images.githubusercontent.com/111668308/215346010-05b65eca-96c9-46df-a2f7-af85b9422f12.mp4
 
 3. Pseudokody:
-	Algorytmy pisane w pseudokodzie, opisujące różne funkcje ważne w językach formalnych
+	- Algorytmy pisane w pseudokodzie, opisujące różne funkcje ważne w językach formalnych
 4. Traffic-Light-Crossing:
-	Aplikacja mobilna w unity, implementująca skrzyżowanie priorytetowe ze światłami, auta nie są poinformowane, reagują na bierząco na rzeczy które widzą przed sobą
-
-Wideo prezentacja:
+	- Aplikacja mobilna w unity, implementująca skrzyżowanie priorytetowe ze światłami, auta nie są poinformowane, reagują na bierząco na rzeczy które widzą przed sobą
+	- Wideo prezentacja:
 
 
 https://user-images.githubusercontent.com/111668308/213841046-7052a0d6-76b6-44b0-a183-8e661e923ea7.mp4
