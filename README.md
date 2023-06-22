@@ -1,3 +1,3 @@
 # Studies-UAM-Public
 
-## [Algorytmy](./Algorytmy i struktury danych/)
+## [Algorytmy](Języki formalne/Arduino)
