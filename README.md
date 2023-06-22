@@ -1,3 +1,3 @@
 # Studies-UAM-Public
 
-## [Algorytmy](Języki formalne/Arduino)
+## [Algorytmy](https://github.com/adbreeker/Studies-UAM-Public/tree/main/Algorytmy%20i%20struktury%20danych)
