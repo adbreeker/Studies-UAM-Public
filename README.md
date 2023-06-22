@@ -12,7 +12,11 @@
 2. ContactsSender-Receiver:
 	Dwie aplikacje (kotlin) na telefony z systemem android, jedna wysyła kontakty z telefonu bez użycia internetu, druga te kontakty odbiera.
 
-## [Języki formalne](https://github.com/adbreeker/Studies-UAM-Public/tree/main/Języki%20formalne)
+## [Inżynieria oprogramowania](https://github.com/adbreeker/Studies-UAM-Public/tree/main/Inżynieria%20oprogramowania)
+
+Dokumentacja oprogramowania oraz rozkład zadań w jirze (wyimaginowany projekt) na potrzeby zajęć z inżynierii oprogramowania
+
+## [Języki formalne i złożoność obliczeniowa](https://github.com/adbreeker/Studies-UAM-Public/tree/main/Języki%20formalne%20i%20złożoność%20obliczeniowa)
 
 1. Arduino:
 	- Kod do kontrolera arduino, rozwiązujący problem przełączania systemu ogrzewania domu przy pomocy pompy ciepła.
@@ -23,9 +27,16 @@
 
 https://user-images.githubusercontent.com/111668308/215346010-05b65eca-96c9-46df-a2f7-af85b9422f12.mp4
 
-3. Pseudokody:
+3. Minecraft-TrafficLights:
+	- Mapka w minecraft implementująca skrzyżowanie z sygnalizacją świetlną przy pomocy command blocków i zegara z pistonów
+	- Podgląd:
+
+
+![2022-12-03_16 08 22](https://github.com/adbreeker/Studies-UAM-Public/assets/111668308/bbe35681-5266-45fc-8554-5846422888b8)
+
+5. Pseudokody:
 	- Algorytmy pisane w pseudokodzie, opisujące różne funkcje ważne w językach formalnych.
-4. Traffic-Light-Crossing:
+6. Traffic-Light-Crossing:
 	- Aplikacja mobilna w unity, implementująca skrzyżowanie priorytetowe ze światłami, auta nie są poinformowane, reagują na bierząco na rzeczy które widzą przed sobą.
 	- Wideo prezentacja:
 
