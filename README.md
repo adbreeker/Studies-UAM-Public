@@ -29,7 +29,7 @@ Dokumentacja oprogramowania oraz rozkład zadań w jirze (wyimaginowany projekt)
 	- Wideo prezentacja:
 
 
-https://user-images.githubusercontent.com/111668308/215346010-05b65eca-96c9-46df-a2f7-af85b9422f12.mp4
+[](https://user-images.githubusercontent.com/111668308/215346010-05b65eca-96c9-46df-a2f7-af85b9422f12.mp4)
 
 3. Minecraft-TrafficLights:
 	- Mapka w minecraft implementująca skrzyżowanie z sygnalizacją świetlną przy pomocy command blocków i zegara z pistonów
