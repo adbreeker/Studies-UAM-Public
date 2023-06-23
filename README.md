@@ -93,7 +93,7 @@ Rozwiązania problemów z dziedziny szeregowania zadań, najciekawszym z nich je
 
 ## [Sztuczna inteligencja](https://github.com/adbreeker/AI_Rat_Saper)
 
-Projekt z przedmiotu Sztuczna inteligencja, realizowany w innym repozytorium
+Projekt z przedmiotu Sztuczna inteligencja, realizowany w innym repozytorium.
 
 ## [User Experience](https://github.com/adbreeker/Studies-UAM-Public/tree/main/User%20Experience)
 
