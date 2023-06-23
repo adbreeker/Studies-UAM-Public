@@ -14,11 +14,11 @@
 
 ## [Grafika komputerowa](https://github.com/adbreeker/GRK_PROJECT)
 
-Projekt z przedmiotu Grafika komputerowa, realizowany w innym repozytorium
+Projekt z przedmiotu Grafika komputerowa, realizowany w innym repozytorium.
 
 ## [Inżynieria oprogramowania](https://github.com/adbreeker/Studies-UAM-Public/tree/main/Inżynieria%20oprogramowania)
 
-Dokumentacja oprogramowania oraz rozkład zadań w jirze (wyimaginowany projekt) na potrzeby zajęć z inżynierii oprogramowania
+Dokumentacja oprogramowania oraz rozkład zadań w jirze (wyimaginowany projekt) na potrzeby zajęć z inżynierii oprogramowania.
 
 ## [Języki formalne i złożoność obliczeniowa](https://github.com/adbreeker/Studies-UAM-Public/tree/main/Języki%20formalne%20i%20złożoność%20obliczeniowa)
 
@@ -32,7 +32,7 @@ Dokumentacja oprogramowania oraz rozkład zadań w jirze (wyimaginowany projekt)
 https://github.com/adbreeker/Studies-UAM-Public/assets/111668308/c0ccbe55-019e-48ba-a9a9-bafee0405826
 
 3. Minecraft-TrafficLights:
-	- Mapka w minecraft implementująca skrzyżowanie z sygnalizacją świetlną przy pomocy command blocków i zegara z pistonów
+	- Mapka w minecraft implementująca skrzyżowanie z sygnalizacją świetlną przy pomocy command blocków i zegara z pistonów.
 	- Podgląd:
 
 
@@ -63,7 +63,7 @@ https://github.com/adbreeker/Studies-UAM-Public/assets/111668308/2704a519-218e-4
 
 ## [Pracownia programowania](https://github.com/adbreeker/Studies-UAM-Public/tree/main/Pracownia%20programowania)
 
-Prosty CRM w .net c#
+Prosty CRM w .net Core.
 
 ## [Programowanie deklaratywne](https://github.com/adbreeker/Studies-UAM-Public/tree/main/Programowanie%20deklaratywne)
 
@@ -74,7 +74,7 @@ Prosty CRM w .net c#
 
 ## [Projekt inżynierski](https://github.com/adbreeker/EngineeringProject)
 
-Projekt inżynierski wieńczący zakończenie studiów inżynierskich, realizowany w innym repozytorium
+Projekt inżynierski wieńczący zakończenie studiów inżynierskich, realizowany w innym repozytorium.
 
 ## [Sieci komputerowe](https://github.com/adbreeker/Studies-UAM-Public/tree/main/Sieci%20komputerowe)
 
@@ -85,12 +85,20 @@ Prosta aplikacja typu klient - serwer działająca na socketach w sieci lokalnej
  
 ## [Systemy operacyjne](https://github.com/adbreeker/Studies-UAM-Public/tree/main/Systemy%20operacyjne)
 
-Aplikacja konsolowa w języku c, implementująca powłokę shell (microshell - niewiele funkcji) do systemu Linux
+Aplikacja konsolowa w języku c, implementująca powłokę shell (microshell - niewiele funkcji) do systemu Linux.
 
 ## [Szeregowanie zadań](https://github.com/adbreeker/Studies-UAM-Public/tree/main/Szeregowanie%20zadań)
 
-Rozwiązania problemów z dziedziny szeregowania zadań, najciekawszym z nich jest algorytm genetyczny implementowany w zestawie 13
+Rozwiązania problemów z dziedziny szeregowania zadań, najciekawszym z nich jest algorytm genetyczny implementowany w zestawie 13.
 
 ## [Sztuczna inteligencja](https://github.com/adbreeker/AI_Rat_Saper)
 
 Projekt z przedmiotu Sztuczna inteligencja, realizowany w innym repozytorium
+
+## [User Experience](https://github.com/adbreeker/Studies-UAM-Public/tree/main/User%20Experience)
+
+Odwzorowanie platformy YouTube w wersji komputerowej i mobilnej, w figmie. Każde na minimum 20 frame'ów, z wykorzystaniem własnych komponentów, stylów oraz wariantów.
+
+## [Wstęp do teori sieci neuronowych](https://github.com/adbreeker/Studies-UAM-Public/tree/main/Wstęp%20do%20teori%20sieci%20neuronowych)
+
+Podstawowe algorytmy wykorzystywane w sieciach neuronowych, pisane w ramach zadań na zajęciach z tegoż przedmiotu.
