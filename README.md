@@ -1,4 +1,4 @@
-# Studies-UAM-Public
+# Studies-UAM-Public (PL)
 
 ## [Algorytmy i struktury danych](https://github.com/adbreeker/Studies-UAM-Public/tree/main/Algorytmy%20i%20struktury%20danych/)
 
@@ -29,7 +29,7 @@ Dokumentacja oprogramowania oraz rozkład zadań w jirze (wyimaginowany projekt)
 	- Wideo prezentacja:
 
 
-https://user-images.githubusercontent.com/111668308/215346010-05b65eca-96c9-46df-a2f7-af85b9422f12.mp4
+https://github.com/adbreeker/Studies-UAM-Public/assets/111668308/c0ccbe55-019e-48ba-a9a9-bafee0405826
 
 3. Minecraft-TrafficLights:
 	- Mapka w minecraft implementująca skrzyżowanie z sygnalizacją świetlną przy pomocy command blocków i zegara z pistonów
@@ -45,7 +45,7 @@ https://user-images.githubusercontent.com/111668308/215346010-05b65eca-96c9-46df
 	- Wideo prezentacja:
 
 
-https://user-images.githubusercontent.com/111668308/213841046-7052a0d6-76b6-44b0-a183-8e661e923ea7.mp4
+https://github.com/adbreeker/Studies-UAM-Public/assets/111668308/2704a519-218e-4927-a959-fc5182ff386a
 
 ## [Metody numeryczne](https://github.com/adbreeker/Studies-UAM-Public/tree/main/Metody%20numeryczne)
 
