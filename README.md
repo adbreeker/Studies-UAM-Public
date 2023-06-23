@@ -79,9 +79,9 @@ Projekt inżynierski wieńczący zakończenie studiów inżynierskich, realizowa
 ## [Sieci komputerowe](https://github.com/adbreeker/Studies-UAM-Public/tree/main/Sieci%20komputerowe)
 
 Prosta aplikacja typu klient - serwer działająca na socketach w sieci lokalnej, klient (c#) wysyła zapytania o bazę słów języka polskiego do serwera (c++) i przyjmuje odpowiedzi takie jak:
-	- Słowa zaczynające się od jakiejś litery
- 	- Słowa o jakiejś długości
-  	- Słowa będące palindromami
+- Słowa zaczynające się od jakiejś litery
+- Słowa o jakiejś długości
+- Słowa będące palindromami
  
 ## [Systemy operacyjne](https://github.com/adbreeker/Studies-UAM-Public/tree/main/Systemy%20operacyjne)
 
