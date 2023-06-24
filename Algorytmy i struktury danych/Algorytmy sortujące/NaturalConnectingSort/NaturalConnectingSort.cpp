@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <chrono>
 
 using namespace std;
 
@@ -127,14 +128,14 @@ void merge(ifstream& input1, ifstream& input2)
             oldI1Pos = input1.tellg();
             actuallI1++;
             input1 >> i1series >> i1number;
-            cout << "taking from first " << i1series << " " << i1number << endl;
+            // cout << "taking from first " << i1series << " " << i1number << endl;
         }
         if (actuallI2 < i2Length)
         {
             oldI2Pos = input2.tellg();
             actuallI2++;
             input2 >> i2series >> i2number;
-            cout << "taking from second " << i2series << " " << i2number << endl;
+            //cout << "taking from second " << i2series << " " << i2number << endl;
         }
 
         if (i1series != NULL && i2series != NULL)
@@ -143,14 +144,14 @@ void merge(ifstream& input1, ifstream& input2)
             {
                 if (i2number < i1number)
                 {
-                    cout << i2number << " < " << i1number << " putting from second " << i2number << endl;
+                    //cout << i2number << " < " << i1number << " putting from second " << i2number << endl;
                     temp << i2number << endl;
                     actuallI1--;
                     input1.seekg(oldI1Pos);
                 }
                 else
                 {
-                    cout << i1number << " < " << i2number << " putting from first " << i1number << endl;
+                    //cout << i1number << " < " << i2number << " putting from first " << i1number << endl;
                     temp << i1number << endl;
                     actuallI2--;
                     input2.seekg(oldI2Pos);
@@ -160,14 +161,14 @@ void merge(ifstream& input1, ifstream& input2)
             {
                 if (i1series < i2series)
                 {
-                    cout << "diffrent series, putting from first " << i1number << endl;
+                    //cout << "diffrent series, putting from first " << i1number << endl;
                     temp << i1number << endl;
                     actuallI2--;
                     input2.seekg(oldI2Pos);
                 }
                 else
                 {
-                    cout << "diffrent series, putting from second " << i2number << endl;
+                    //cout << "diffrent series, putting from second " << i2number << endl;
                     temp << i2number << endl;
                     actuallI1--;
                     input1.seekg(oldI1Pos);
@@ -178,12 +179,12 @@ void merge(ifstream& input1, ifstream& input2)
         {
             if (i1series == NULL)
             {
-                cout << "first is empty, putting from second " << i2number << endl;
+                //cout << "first is empty, putting from second " << i2number << endl;
                 temp << i2number << endl;
             }
             if (i2series == NULL)
             {
-                cout << "second is empty, puting from first " << i1number << endl;
+                //cout << "second is empty, puting from first " << i1number << endl;
                 temp << i1number << endl;
             }
         }
@@ -232,19 +233,8 @@ void printFile(ifstream& file, char separator)
     file.seekg(0, ios::beg);
 }
 
-int main()
+void NaturalConnectingSort()
 {
-    //creating copy of to sort file
-    ifstream startingValues;
-    //startingValues.open(pathTestFile); test file
-    startingValues.open(pathExcerciseFile);
-    ofstream inputFileCopy;
-    inputFileCopy.open(pathMergedFile);
-
-    copyFile(startingValues, inputFileCopy);
-
-    //separating and merging untill sorted
-    int i = 1;
     while (true)
     {
         ifstream merged;
@@ -264,12 +254,29 @@ int main()
         {
             merge(assistant1, assistant2);
         }
-
-        cout << endl << i << " -------------------------------- " << i << endl;
-        i++;
     }
+}
 
-    cout << "\nsorting completed !!!\n\n";
+int main()
+{
+    //creating copy of to sort file
+    ifstream startingValues;
+    //startingValues.open(pathTestFile); test file
+    startingValues.open(pathExcerciseFile);
+    ofstream inputFileCopy;
+    inputFileCopy.open(pathMergedFile);
+
+    copyFile(startingValues, inputFileCopy);
+
+    //counting sort time
+    auto startTime = chrono::high_resolution_clock::now();
+    NaturalConnectingSort();
+    auto stopTime = chrono::high_resolution_clock::now();
+
+
+
+    // printing result: -------------------------------------------------
+    cout << "sorting completed in: " << (chrono::duration_cast<chrono::microseconds>(stopTime - startTime)).count() << " microseconds\n\n";
 
     // coping last merged into sorted file
     ifstream merged;
