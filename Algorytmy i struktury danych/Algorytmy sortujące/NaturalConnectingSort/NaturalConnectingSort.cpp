@@ -6,8 +6,9 @@
 using namespace std;
 
 //input files paths
-string pathTestFile = "./Files/Input/testFile.txt";
-string pathExcerciseFile = "./Files/Input/we50.txt";
+string pathTestFileBalanced = "../TestFileGenerator/TestFiles/balanced.txt";
+string pathTestFileBig = "../TestFileGenerator/TestFiles/bigValues.txt";
+string pathTestFileMuch = "../TestFileGenerator/TestFiles/muchValues.txt";
 
 //assistant files paths
 string pathMergedFile = "./Files/Assistant/mergedFile.txt";
@@ -261,8 +262,7 @@ int main()
 {
     //creating copy of to sort file
     ifstream startingValues;
-    //startingValues.open(pathTestFile); test file
-    startingValues.open(pathExcerciseFile);
+    startingValues.open(pathTestFileBalanced);
     ofstream inputFileCopy;
     inputFileCopy.open(pathMergedFile);
 
@@ -276,7 +276,11 @@ int main()
 
 
     // printing result: -------------------------------------------------
-    cout << "sorting completed in: " << (chrono::duration_cast<chrono::microseconds>(stopTime - startTime)).count() << " microseconds\n\n";
+    cout << "sorting completed in: " << ((chrono::duration<float>)(stopTime - startTime)).count() << " seconds\n\n";
+
+
+    cout << "\n\nWanna see result here (press any button)?\n\n";
+    getchar();
 
     // coping last merged into sorted file
     ifstream merged;
